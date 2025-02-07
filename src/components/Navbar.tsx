@@ -25,7 +25,7 @@ const Navbar = () => {
   // }, [isDarkMode])
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 dark:bg-gray-900/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-background/80 dark:bg-zinc-900/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Button variant="ghost" size="default" >
@@ -44,7 +44,7 @@ const Navbar = () => {
           </nav>
         </div>
         {isMenuOpen && (
-          <nav className="md:hidden bg-background/80 dark:bg-gray-900/80 backdrop-blur-sm">
+          <nav className="md:hidden bg-background/80 dark:bg-zinc-900/80 backdrop-blur-sm">
             <div className="container mx-auto px-4 py-2 flex flex-col space-y-2">
               <a href="#about" className="hover:text-primary transition-colors" onClick={toggleMenu}>About</a>
               <a href="#skills" className="hover:text-primary transition-colors" onClick={toggleMenu}>Skills</a>

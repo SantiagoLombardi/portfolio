@@ -2,7 +2,7 @@ import { Github, Mail, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-100 py-16">
+    <footer className="bg-zinc-900 text-gray-100 py-16">
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:gap-12">
           {/* Name and Links Section */}
@@ -19,7 +19,7 @@ export default function Footer() {
               >
                 <Github className="h-5 w-5" />
                 <span className="text-lg">@SantiagoLombardi</span>
-                <div className="h-px bg-gray-700 flex-1" />
+                <div className="h-px bg-zinc-700 flex-1" />
               </a>
               <a 
                 href="mailto:Contacto@SantiagoLombardi.com"
@@ -27,19 +27,19 @@ export default function Footer() {
               >
                 <Mail className="h-5 w-5" />
                 <span className="text-lg">Contacto@SantiagoLombardi.com</span>
-                <div className="h-px bg-gray-700 flex-1" />
+                <div className="h-px bg-zinc-700 flex-1" />
               </a>
             </div>
           </div>
 
           {/* Location Section */}
-          <div className="flex items-center justify-between pt-8 border-t border-gray-800">
+          <div className="flex items-center justify-between pt-8 border-t border-zinc-800">
             <div className="flex items-center gap-2 text-gray-300">
               <MapPin className="h-5 w-5" />
               <span className="text-lg">From Argentina to the World</span>
             </div>
             <p className="text-sm text-gray-400">
-              © 2024 All rights reserved
+              © 2025 All rights reserved
             </p>
           </div>
         </div>

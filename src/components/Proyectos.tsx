@@ -33,7 +33,7 @@ export default function ProjectsSection() {
   ]
 
   return (
-    <section className="bg-gray-800 py-20 px-4">
+    <section className="bg-zinc-800 py-20 px-4">
       <div className="container mx-auto">
         <h2 className="text-6xl font-black tracking-tighter mb-12">
           My projects

@@ -7,7 +7,7 @@ export default function Portfolio() {
 
 
   return (
-    <div className="min-h-screen bg-background text-foreground bg-gray-900 text-gray-100 transition-colors duration-300">
+    <div className="min-h-screen bg-background text-foreground bg-zinc-900 text-gray-100 transition-colors duration-300">
       {/* Header */}
       
 
