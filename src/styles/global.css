@@ -72,4 +72,8 @@
   scrollbar-color: black #f9f9f9;
   /* font-family: 'Cabinet Grotesk', sans-serif; */
   font-family: 'Inter', sans-serif;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
 }

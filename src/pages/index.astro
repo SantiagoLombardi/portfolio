@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import SpeedInsights from '@vercel/speed-insights/astro';
 import Proyectos from '@/components/Proyectos';
 import Education from '@/components/Education';
-
+import { ScrollProgress } from '@/components/magicui/scroll-progress';
 ---
 <script is:inline>
 	const getThemePreference = () => {
@@ -28,6 +28,7 @@ import Education from '@/components/Education';
 
 <Layout title="Santiago Lombardi">
 	<!-- <Navbar client:load /> -->
+	<ScrollProgress client:load />
 	<Hero client:load />
 	<Proyectos client:load/>
 	<Education client:load/>
