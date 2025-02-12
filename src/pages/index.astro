@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import SpeedInsights from '@vercel/speed-insights/astro';
+import Analytics from '@vercel/analytics/astro'
 import Proyectos from '@/components/Proyectos';
 import Education from '@/components/Education';
 import { ScrollProgress } from '@/components/magicui/scroll-progress';
@@ -34,6 +35,7 @@ import { ScrollProgress } from '@/components/magicui/scroll-progress';
 	<Education client:load/>
 	<Footer />
 	<SpeedInsights/>
+	<Analytics/>
 </Layout>
 
 
