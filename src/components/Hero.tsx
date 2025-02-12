@@ -31,7 +31,10 @@ export default function Portfolio() {
                 </h1>
               </BlurFade>
               <BlurFade delay={0.5} >
-                <WordRotate className="text-xl md:text-2xl text-blue-500" words={["Jr. Apps Developer", "Jr. Web Developer", "Jr. Web Designer"]}/>
+                <div className="flex items-center">
+                  <p className="text-xl md:text-2xl text-blue-500 inline mr-2">I´m a </p>
+                  <WordRotate className="text-xl md:text-2xl text-blue-500 inline" words={[" Jr. Apps Developer", " Jr. Web Developer", " Jr. Web Designer"]} />
+                </div>
               </BlurFade>
               <BlurFade delay={0.75} >
                 <div className="flex space-x-4 pt-4">
