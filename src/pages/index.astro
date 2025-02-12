@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import SpeedInsights from '@vercel/speed-insights/astro';
 import Proyectos from '@/components/Proyectos';
 import Education from '@/components/Education';
 
@@ -32,6 +32,7 @@ import Education from '@/components/Education';
 	<Proyectos client:load/>
 	<Education client:load/>
 	<Footer />
+	<SpeedInsights/>
 </Layout>
 
 
