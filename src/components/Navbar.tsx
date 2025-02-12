@@ -25,31 +25,31 @@ const Navbar = () => {
   // }, [isDarkMode])
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 dark:bg-zinc-900/80 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-black/80  backdrop-blur-sm border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Button variant="ghost" size="default" >
               Santiago
               {/* {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />} */}
             </Button>
-            <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
+            <Button variant="ghost" size="icon" className="md:hidden " onClick={toggleMenu}>
               {isMenuOpen ? <X /> : <Menu />}
             </Button>
           </div>
           <nav className="hidden md:flex space-x-8">
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
-            <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+            <a href="#about" className="text-white hover:text-blue-500 transition-colors">About</a>
+            <a href="#skills" className="text-white hover:text-blue-500 transition-colors">Skills</a>
+            <a href="#projects" className="text-white hover:text-blue-500 transition-colors">Projects</a>
+            <a href="#contact" className="text-white hover:text-blue-500 transition-colors">Contact</a>
           </nav>
         </div>
         {isMenuOpen && (
           <nav className="md:hidden bg-background/80 dark:bg-zinc-900/80 backdrop-blur-sm">
             <div className="container mx-auto px-4 py-2 flex flex-col space-y-2">
-              <a href="#about" className="hover:text-primary transition-colors" onClick={toggleMenu}>About</a>
-              <a href="#skills" className="hover:text-primary transition-colors" onClick={toggleMenu}>Skills</a>
-              <a href="#projects" className="hover:text-primary transition-colors" onClick={toggleMenu}>Projects</a>
-              <a href="#contact" className="hover:text-primary transition-colors" onClick={toggleMenu}>Contact</a>
+              <a href="#about" className="text-white hover:text-blue-500 transition-colors" onClick={toggleMenu}>About</a>
+              <a href="#skills" className="text-white hover:text-blue-500 transition-colors" onClick={toggleMenu}>Skills</a>
+              <a href="#projects" className="text-white hover:text-blue-500 transition-colors" onClick={toggleMenu}>Projects</a>
+              <a href="#contact" className="text-white hover:text-blue-500 transition-colors" onClick={toggleMenu}>Contact</a>
             </div>
           </nav>
         )}

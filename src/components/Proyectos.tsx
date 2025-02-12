@@ -33,16 +33,16 @@ export default function ProjectsSection() {
   ]
 
   return (
-    <section className="bg-zinc-800 py-20 px-4">
+    <section className="bg-black py-20 px-16 max-sm:px-4 border-b">
       <div className="container mx-auto">
         <h2 className="text-6xl font-black tracking-tighter mb-12">
           My projects
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`${project.className} ${project.color} rounded-3xl p-6 transition-transform hover:scale-[1.02] group cursor-pointer`}
+              className={`${project.className} border rounded-xl p-6 transition-transform hover:scale-[1.02] group cursor-pointer hover:border-blue-500 transition-colors`}
             >
               <div className="h-full flex flex-col justify-between">
                 <div>

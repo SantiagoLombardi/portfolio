@@ -1,18 +1,23 @@
 'use client'
-
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, } from 'lucide-react'
+import { cn } from "@/lib/utils"
+import { DotPattern } from "./magicui/dot-pattern"
 
 export default function Portfolio() {
 
 
   return (
-    <div className="min-h-screen bg-background text-foreground bg-zinc-900 text-gray-100 transition-colors duration-300">
-      {/* Header */}
-      
+    <div className="h-[100dvh] bg-background text-foreground bg-black text-gray-100 transition-colors duration-300 border-b overflow-hidden">
 
-      {/* Hero Section */}
       <section className="min-h-[calc(100vh-73px)] flex items-center">
+      <DotPattern
+        width={20}
+        cx={5}
+        className={cn(
+          "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+        )}
+      />
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
@@ -21,14 +26,14 @@ export default function Portfolio() {
                 <br />
                 Lombardi
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground">
+              <p className="text-xl md:text-2xl text-blue-500">
                 Jr. Apps Developer
               </p>
               <div className="flex space-x-4 pt-4">
                 <Button variant="ghost" size="icon" asChild>
                   <a href="https://github.com/santiagolombardi" target="_blank" rel="noopener noreferrer">
                     <Github className="h-6 w-6" />
-                    <span className="sr-only">GitHub</span>
+                    <span className="sr-only ">GitHub</span>
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
@@ -38,22 +43,23 @@ export default function Portfolio() {
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:santiago@example.com">
+                  <a href="mailto:SantiagoNicolasLombardi@gmail.com">
                     <Mail className="h-6 w-6" />
                     <span className="sr-only">Email</span>
                   </a>
                 </Button>
               </div>
             </div>
-            <div className="relative aspect-square w-full max-w-2xl mx-auto lg:ml-auto">
+            
+            {/* <div className="relative aspect-square w-full max-w-2xl mx-auto lg:ml-auto">
               <img
-                src="/placeholder.svg"
-                alt="Santiago Lombardi"
-                // fill
+              src="/placeholder.svg"
+              alt="Santiago Lombardi"
+              // fill
                 className="object-cover grayscale contrast-125"
                 // priority
               />
-            </div>
+              </div> */}
           </div>
         </div>
       </section>

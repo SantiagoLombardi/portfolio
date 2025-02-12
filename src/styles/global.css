@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,8 +67,9 @@
 }
 
 * {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scroll-behavior: smooth;
   scrollbar-color: black #f9f9f9;
-  font-family: 'Cabinet Grotesk', sans-serif;
+  /* font-family: 'Cabinet Grotesk', sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
