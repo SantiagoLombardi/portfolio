@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
 
           {/* Location Section */}
-          <div className="flex items-center justify-between pt-8 border-t border-zinc-800">
+          <div className="flex items-center justify-between pt-8 border-t border-zinc-800 max-sm:flex-col">
             <div className="flex items-center gap-2 text-gray-300">
               <MapPin className="h-5 w-5" />
               <span className="text-lg">From Argentina to the Web</span>
