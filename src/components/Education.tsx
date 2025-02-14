@@ -28,7 +28,7 @@ export default function Education() {
     <section className="bg-black py-20 px-16 max-sm:px-4 border-b">
       <div className="container mx-auto">
         <BlurFade delay={0.25} inView>
-          <h2 className="text-6xl font-black tracking-tighter mb-12">
+          <h2 className="text-6xl text-white font-black tracking-tighter mb-12">
             My Education
           </h2>
         </BlurFade>
@@ -43,8 +43,8 @@ export default function Education() {
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col justify-start gap-1 py-2">
-                    <h3 className="font-semibold leading-none">{institute.name}</h3>
-                    <h3 className="font-semibold text-2xl leading-none">{institute.degree}</h3>
+                    <h3 className="font-semibold leading-none text-white">{institute.name}</h3>
+                    <h3 className="font-semibold text-2xl leading-none text-white">{institute.degree}</h3>
                     <time className="text-xs text-muted-foreground">{institute.duration}</time>
                   </div>
                 </BlurFade>

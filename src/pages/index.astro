@@ -1,37 +1,24 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero'
-import Footer from '../components/Footer'
+import Hero from '@/components/Hero'
+import Footer from '@/components/Footer'
 import SpeedInsights from '@vercel/speed-insights/astro';
 import Analytics from '@vercel/analytics/astro'
 import Proyectos from '@/components/Proyectos';
 import Education from '@/components/Education';
 import { ScrollProgress } from '@/components/magicui/scroll-progress';
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
 ---
-<script is:inline>
-	const getThemePreference = () => {
-		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-			return localStorage.getItem('theme');
-		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-	};
-	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
- 
-	if (typeof localStorage !== 'undefined') {
-		const observer = new MutationObserver(() => {
-			localStorage.setItem('theme', 'dark');
-		});
-		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-	}
-</script>
+
 
 <Layout title="Santiago Lombardi">
 	<!-- <Navbar client:load /> -->
 	<ScrollProgress client:load />
 	<Hero client:load />
-	<Proyectos client:load/>
+	<Proyectos projects={projects} client:load/>
 	<Education client:load/>
 	<Footer />
 	<SpeedInsights/>
