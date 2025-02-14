@@ -2,9 +2,9 @@
 title: Nuevas Bases
 description: Landing page made with Astro, React, and Tailwind
 image:
-  first: 1.png
-  second: 1.png
-  third: 1.png
+  - 1.png
+  - 1.png
+  - 1.png
 className: col-span-2 row-span-1 md:col-span-1
 technologies:
   - first

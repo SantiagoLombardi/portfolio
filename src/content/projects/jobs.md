@@ -2,9 +2,9 @@
 title: Jobs
 description: Web app made with React and Firebase
 image:
-  first: 1.png
-  second: 1.png
-  third: 1.png
+  - 1.png
+  - 1.png
+  - 1.png
 className: col-span-1 row-span-1
 technologies:
   - first
