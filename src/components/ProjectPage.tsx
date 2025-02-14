@@ -53,7 +53,8 @@ export default function ProjectPage({
         <div className="grid lg:grid-cols-3 gap-4 mb-12">
           <div className="lg:col-span-2">
             <img
-              src={image[0] || "/placeholder.svg"}
+              src="/placeholder.svg"
+              // src={image[0] || "/placeholder.svg"}
               alt="Project main showcase"
               className="w-full h-full object-cover rounded-lg cursor-pointer"
               onClick={() => setSelectedImage(image[0])}
@@ -61,13 +62,13 @@ export default function ProjectPage({
           </div>
           <div className="grid gap-4">
               <img
-                src={image[1] || "/placeholder.svg"}
+                src="/placeholder.svg"
                 alt={`Project gallery caca`}
                 className="w-full h-full object-cover rounded-lg cursor-pointer"
                 onClick={() => setSelectedImage(image[1])}
               />
               <img
-                src={image[2] || "/placeholder.svg"}
+                src="/placeholder.svg"
                 alt={`Project gallery caca`}
                 className="w-full h-full object-cover rounded-lg cursor-pointer"
                 onClick={() => setSelectedImage(image[2])}

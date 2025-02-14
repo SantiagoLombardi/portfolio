@@ -12,7 +12,7 @@ import ProjectPage from '@/components/ProjectPage';
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
 
-  return projects.map((project) => ({
+  return projects.map((project: any) => ({
     params: { id: project.slug },
     props: { project }
   }));
@@ -21,12 +21,12 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { data } = project;
-const { title, technologies, image } = data;
+const { title, technologies, image, description } = data;
 ---
 
 <Layout title={title}> 
   <ScrollProgress client:load />
-  <ProjectPage title={title} technologies={technologies} description="caca" image={image} />
+  <ProjectPage title={title} technologies={technologies} description={description} image={image} />
   <Footer />
   <SpeedInsights/>
   <Analytics/>
